@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dragground2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/petImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/your_pet_image" />
+
+    <!-- Progress Bars -->
+    <ProgressBar
+        android:id="@+id/progressBarFed"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/petImageView"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#FDFCFC"
+        android:max="100"
+        android:progress="100" />
+
+    <ProgressBar
+        android:id="@+id/progressBarHappy"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarFed"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#EFEAEA"
+        android:max="100"
+        android:progress="100" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBarClean"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarHappy"
+        android:layout_marginTop="57dp"
+        android:backgroundTint="#E6DFDF"
+        android:max="100"
+        android:progress="100" />
+
+    <TextView
+        android:id="@+id/fedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarFed"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-38dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Hunger"
+        android:textColor="#F4F2F2" />
+
+
+    <TextView
+        android:id="@+id/happyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fedLabel"
+        android:layout_marginTop="33dp"
+        android:text="Happy"
+        android:textColor="#F3E4E4" />
+
+    <TextView
+        android:id="@+id/cleanLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/happyLabel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="371dp"
+        android:text="Alive"
+        android:textColor="#F6F0F0" />
+
+    <Button
+        android:id="@+id/feedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cleanLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="203dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Feed" />
+
+    <Button
+        android:id="@+id/cleanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cleanLabel"
+        android:layout_marginTop="205dp"
+        android:backgroundTint="#4CAF50"
+        android:text="sleep" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cleanLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="11dp"
+        android:layout_toEndOf="@+id/feedButton"
+        android:backgroundTint="#4CAF50"
+        android:text="Play" />
+
+    <ImageView
+        android:id="@+id/deathImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:src="@drawable/pet_dying_image" />
+
+</RelativeLayout>
