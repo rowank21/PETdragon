@@ -35,8 +35,12 @@ Conclusion:
 Dragonkeep offers a captivating and immersive experience for dragon enthusiasts of all ages. With its stunning graphics, engaging interactions, and intuitive progress bars, DragonCompanion provides hours of entertainment and companionship. 
 Download Dragonkeep today and embark on an unforgettable journey with your very own virtual pet dragon!
 
+if this readme didnt ecxite you enough here is a link to my youtube video showcasing the app: https://youtu.be/qP9EzNxgV48
+
 referencing
 Introduction to mobile application and development. (2024). module manual. Varsity College
 OpenAI. (2024). ChatGPT. https://openai.com/chatgpt
 YouTube. (2024). https://www.youtube.com
 Stack Overflow. (2021). https://stackoverflow.com
+
+
